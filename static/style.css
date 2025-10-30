@@ -1,0 +1,102 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #fff;
+  text-shadow: 1px 3px 12px #13141544;
+  margin-bottom: 24px;
+  font-size: 2.3rem;
+}
+.cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 22px;
+  box-shadow: 0 2px 28px rgba(0,0,0,0.12);
+  padding: 2.2rem 2rem 1.3rem;
+  min-width: 290px;
+  max-width: 340px;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(7px);
+}
+.card h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+}
+input[type="text"] {
+  padding: 0.7rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  background: rgba(255,255,255,0.44);
+  outline: none;
+  transition: border 0.2s;
+  margin-bottom: 0.7rem;
+}
+input[type="text"]:focus {
+  border: 1.5px solid #497eff;
+  background: #fff9;
+}
+button {
+  padding: 0.7rem 2rem;
+  background: linear-gradient(90deg, #497eff 0%, #43e97b 100%);
+  color: #fff;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #497eff38;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.22s, transform 0.09s;
+}
+button:hover, button:active {
+  background: linear-gradient(90deg, #496fff 0%, #1be7ff 100%);
+  transform: translateY(-2px) scale(1.045);
+}
+#price-result, #balance-result {
+  margin-top: 1.2rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.08rem;
+  word-break: break-all;
+}
+@media (max-width: 950px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+}

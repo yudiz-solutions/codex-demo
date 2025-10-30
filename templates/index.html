@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker Pro</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Crypto Tracker</h1>
+    <div class="cards">
+        <!-- Price Card -->
+        <div class="card">
+            <h2>Get Crypto Price</h2>
+            <form id="price-form">
+                <input type="text" id="symbol" placeholder="e.g. bitcoin, ethereum" required>
+                <button type="submit">Get Price</button>
+            </form>
+            <div id="price-result"></div>
+        </div>
+        <!-- Balance Card -->
+        <div class="card">
+            <h2>Get ETH Balance</h2>
+            <form id="balance-form">
+                <input type="text" id="address" placeholder="Ethereum Wallet Address" required>
+                <button type="submit">Get Balance</button>
+            </form>
+            <div id="balance-result"></div>
+        </div>
+    </div>
+</div>
+<script src="/static/script.js"></script>
+</body>
+</html>
