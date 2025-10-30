@@ -86,12 +86,87 @@ button:hover, button:active {
   background: linear-gradient(90deg, #496fff 0%, #1be7ff 100%);
   transform: translateY(-2px) scale(1.045);
 }
+#clear-history {
+  align-self: flex-end;
+}
+.secondary-button {
+  background: rgba(255,255,255,0.18);
+  box-shadow: none;
+  font-size: 0.95rem;
+  padding: 0.5rem 1.2rem;
+}
+.secondary-button:hover,
+.secondary-button:active {
+  background: rgba(255,255,255,0.28);
+  transform: translateY(-1px);
+}
 #price-result, #balance-result {
   margin-top: 1.2rem;
   color: #fff;
   font-weight: 400;
   font-size: 1.08rem;
   word-break: break-all;
+}
+.history-card {
+  align-items: stretch;
+}
+.history-actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.history-item,
+.history-empty {
+  background: rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
+}
+.history-empty {
+  text-align: center;
+  opacity: 0.7;
+}
+.history-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+.history-type {
+  background: rgba(73, 126, 255, 0.25);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.history-query {
+  font-size: 0.95rem;
+  word-break: break-all;
+}
+.history-result {
+  font-size: 0.95rem;
+  opacity: 0.95;
+  word-break: break-word;
+}
+.history-item-error .history-type {
+  background: rgba(255, 99, 132, 0.3);
+}
+.history-item-error .history-result {
+  color: #ff9090;
 }
 @media (max-width: 950px) {
   .cards {
